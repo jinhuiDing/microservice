@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 
 @SpringBootApplication
-public class ProviderUserApplication {
+public class ProviderUserMetadataApplication {
 
     @Bean
     public DiscoveryClient.DiscoveryClientOptionalArgs discoveryClientOptionalArgs() {
@@ -29,6 +29,6 @@ public class ProviderUserApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderUserApplication.class, args);
+        SpringApplication.run(ProviderUserMetadataApplication.class, args);
     }
 }

@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class ConsumerMovieApplication {
+public class ConsumerMovieMetadataApplication {
 
 
 
@@ -24,6 +24,6 @@ public class ConsumerMovieApplication {
         return new RestTemplate();
     }
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMovieApplication.class, args);
+        SpringApplication.run(ConsumerMovieMetadataApplication.class, args);
     }
 }
