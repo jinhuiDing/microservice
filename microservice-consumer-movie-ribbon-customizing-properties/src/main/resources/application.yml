@@ -15,11 +15,11 @@ user:
 
 
 info:
-  app: microservice-simple-consumer-movie-metadata
-  encoding: UTF-8
+  app: @project.artifactId@
+  encoding: @project.build.sourceEncoding@
   java:
-    source: 1.8.0_162
-    target: 1.8.0_162
+    source: @java.version@
+    target: @java.version@
 
 
 
@@ -31,3 +31,6 @@ eureka:
     prefer-ip-address: true
 
 
+microservice-provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

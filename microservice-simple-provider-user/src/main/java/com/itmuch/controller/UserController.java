@@ -24,6 +24,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User findById(@PathVariable Long id){
+        System.out.println("port= 8000" );
         return userRepository.findOne(id);
     }
 }

@@ -15,7 +15,7 @@ user:
 
 
 info:
-  app: microservice-simple-consumer-movie-metadata
+  app: microservice-consumer-movie-ribbon-customizing
   encoding: UTF-8
   java:
     source: 1.8.0_162

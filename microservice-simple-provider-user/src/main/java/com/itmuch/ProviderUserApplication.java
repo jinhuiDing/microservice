@@ -1,13 +1,7 @@
 package com.itmuch;
 
-import com.netflix.discovery.DiscoveryClient;
-import com.sun.jersey.api.client.filter.ClientFilter;
-import com.sun.jersey.api.client.filter.HTTPBasicAuthFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.util.ArrayList;
 
 /**
  * @description: ProviderUserApplication
@@ -19,14 +13,7 @@ import java.util.ArrayList;
 @SpringBootApplication
 public class ProviderUserApplication {
 
-    @Bean
-    public DiscoveryClient.DiscoveryClientOptionalArgs discoveryClientOptionalArgs() {
-        DiscoveryClient.DiscoveryClientOptionalArgs client = new DiscoveryClient.DiscoveryClientOptionalArgs();
-        ArrayList<ClientFilter> list = new ArrayList<ClientFilter>();
-        list.add(new HTTPBasicAuthFilter("user", "password123"));
-        client.setAdditionalFilters(list);
-        return client;
-    }
+
 
     public static void main(String[] args) {
         SpringApplication.run(ProviderUserApplication.class, args);
