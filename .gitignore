@@ -1,8 +1,8 @@
 HELP.md
-target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+target
 
 ### STS ###
 .apt_generated
@@ -42,3 +42,4 @@ microservice-simple-consumer-movie-metadata/src/test/
 microservice-simple-consumer-movie/src/test/
 microservice-simple-provider-user-my-metadata/src/test/
 microservice-simple-provider-user/src/test/
+
