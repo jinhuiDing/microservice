@@ -1,0 +1,44 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+
+### VS Code ###
+.vscode/
+.gitignore
+microservice-consumer-movie-feign-customizing/src/test/
+microservice-consumer-movie-feign/src/test/
+microservice-consumer-movie-ribbon-customizing-properties/src/test/
+microservice-consumer-movie-ribbon-customizing/src/test/
+microservice-consumer-movie-ribbon/src/test/
+microservice-consumer-movie-without-eureka/src/test/
+microservice-provider-user-with-auth/src/test/
+microservice-simple-consumer-movie-metadata/src/test/
+microservice-simple-consumer-movie/src/test/
+microservice-simple-provider-user-my-metadata/src/test/
+microservice-simple-provider-user/src/test/

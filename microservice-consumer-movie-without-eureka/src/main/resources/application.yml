@@ -15,14 +15,16 @@ user:
 
 
 info:
-  app: microservice-consumer-movie-ribbon-customizing-properties
-  encoding: UTF-8
+  app: @project.artifactId@
+  encoding: @project.build.sourceEncoding@
   java:
-    source: 1.8.0_152-release
-    target: 1.8.0_152-release
+    source: @java.version@
+    target: @java.version@
 
 
-
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:8000,localhost:8001
 eureka:
   client:
     service-url:
@@ -31,6 +33,3 @@ eureka:
     prefer-ip-address: true
 
 
-microservice-provider-user:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -1,0 +1,54 @@
+
+
+server:
+  port: 8000
+
+
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+
+
+  application:
+    name: microservice-provider-user
+
+
+
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.typedescriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtrator: trace
+
+
+management:
+  security:
+    enabled: false
+
+
+
+info:
+  app: @project.artifactId@
+  encoding: @project.build.sourceEncoding@
+  java:
+    source: @java.version@
+    target: @java.version@
+
+
+eureka:
+
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka

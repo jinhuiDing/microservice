@@ -1,5 +1,6 @@
 package com.itmuch.config;
 
+import com.RibbonConfiguration;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Configuration;
 
