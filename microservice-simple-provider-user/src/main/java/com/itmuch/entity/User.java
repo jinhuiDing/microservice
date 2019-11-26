@@ -66,6 +66,17 @@ public class User {
         return balance;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", balance=" + balance +
+                '}';
+    }
+
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
