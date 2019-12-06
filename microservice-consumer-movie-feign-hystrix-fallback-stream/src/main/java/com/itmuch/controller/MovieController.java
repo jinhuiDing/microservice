@@ -24,8 +24,7 @@ public class MovieController {
 
     @Autowired
     UserFeignClient userFeignClient;
-    @Value("${user.userServiceUrl}")
-    private String url;
+
 
     @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id){
