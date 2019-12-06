@@ -7,9 +7,7 @@
     <groupId>com.itmuch.cloud</groupId>
     <artifactId>microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>microservice-simple-provider-user</module>
-    </modules>
+
     <packaging>pom</packaging>
 
 </project>
