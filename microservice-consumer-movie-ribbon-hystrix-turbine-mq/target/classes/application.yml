@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: microservice-simple-consumer-movie
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
 
 management:
   security:
@@ -15,12 +20,11 @@ user:
 
 
 info:
-  app: microservice-consumer-movie-ribbon-hystrix
+  app: microservice-consumer-movie-ribbon-hystrix-turbine-mq
   encoding: UTF-8
   java:
-    source: 1.8.0_152-release
-    target: 1.8.0_152-release
-
+    source: 1.8.0_162
+    target: 1.8.0_162
 
 
 eureka:
