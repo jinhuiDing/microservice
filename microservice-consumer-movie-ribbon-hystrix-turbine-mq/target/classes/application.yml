@@ -23,8 +23,8 @@ info:
   app: microservice-consumer-movie-ribbon-hystrix-turbine-mq
   encoding: UTF-8
   java:
-    source: 1.8.0_162
-    target: 1.8.0_162
+    source: 1.8.0_152-release
+    target: 1.8.0_152-release
 
 
 eureka:
