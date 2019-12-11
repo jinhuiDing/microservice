@@ -7,6 +7,10 @@
     <groupId>com.itmuch.cloud</groupId>
     <artifactId>microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>microservice-gateway-zuul</module>
+        <module>microservice-file-upload</module>
+    </modules>
 
 
     <packaging>pom</packaging>
