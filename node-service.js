@@ -16,11 +16,11 @@ var server = http.createServer(function (req, res) {
     }else {
         res.end("404")
     }
-})
+});
 
 
 //创建监听,并打印日志
 
 server.listen(8060,function () {
     console.log("listening on localhost:8060")
-})
+});
